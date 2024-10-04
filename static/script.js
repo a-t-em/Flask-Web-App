@@ -2,9 +2,9 @@ document.getElementById('requestForm').addEventListener('submit', function(event
     event.preventDefault();
 
     const inputData = document.getElementById('inputData').value;
-    const data = {"query": inputData};
+    const data = {query: inputData};
 
-    fetch('http://localhost:5000/query', {
+    fetch('http://localhost:3000/query', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
