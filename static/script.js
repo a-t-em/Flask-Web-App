@@ -18,7 +18,7 @@ document.getElementById('requestForm').addEventListener('submit', function(event
         return response.json();
     })
     .then(data => {
-        document.getElementById('jsonResponse').textContent = JSON.stringify(data, null, 2);
+        document.getElementById('jsonResponse').textContent = data["response"];
     })
     .catch(error => {
         console.error('Error:', error);
